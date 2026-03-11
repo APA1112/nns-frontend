@@ -10,7 +10,7 @@ RUN npm install --legacy-peer-deps
 
 # Copiamos el resto del código y construimos
 COPY . .
-RUN npm run build
+RUN npm run dev
 
 # Etapa 2: Servidor de producción (Nginx)
 FROM nginx:stable-alpine
